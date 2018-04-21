@@ -1,0 +1,135 @@
+Sebelum di run
+from pyton2.nilai import nilai_mahasiswa
+from pyton2.pemba import pembayaran
+from pyton2.kalkulator import kalku
+
+def menu():
+    print("===================================================")
+    print("\n\t---pilihan---")
+    print("\t1. penilaian mahasiswa")
+    print("\t2. pembayaran mahasiswa")
+    print("\t3. kalkulator")
+   
+    pilih = input("\n\tsilakan pilih : ")
+    if pilih == 1:
+        print(nilai_mahasiswa())
+    elif pilih == 2:
+        print(pembayaran())
+    elif pilih == 3:
+        print(kalku())
+        
+    else:
+        exit
+    tanya()
+
+def tanya():
+    tanya =raw_input("\nKembali ke menu (y/t)? ")
+    if tanya == "y":
+        menu()
+    elif tanya == "t":
+        exit
+    else:
+        print ("\n\tSalah input...........!!!")
+        tanya()
+
+
+
+def user():
+    
+    username = raw_input("\nUsername : ")
+    password = raw_input("\npassword : ")
+    print("================================================")
+
+    if username == "dede" and password == "123":
+        menu()
+    
+    else:
+        print ("maaf passwor atau username mu salah.........!!!")
+        user()
+user()
+
+sesudah di run
+======================== RESTART: C:\Python27\main.py ========================
+
+Username : dede
+
+password : 123
+================================================
+===================================================
+
+	---pilihan---
+	1. penilaian mahasiswa
+	2. pembayaran mahasiswa
+	3. kalkulator
+
+	silakan pilih : 1
+
+================================================
+
+	Masukkan Nama: dede
+	Masukkan Nim: 123
+	Nilai Tugas: 60
+	Nilai UTS: 70
+	Nilai UAS: 80
+
+	Tambah data [y/n]?  n
++----+------+-----+-------------+-----------+-----------+-------------+
+| No | Nama | Nim | Nilai Tugas | Nilai UTS | Nilai UAS | Nilai Akhir |
++====+======+=====+=============+===========+===========+=============+
+| 1  | dede | 123 |          60 |        70 |        80 |          70 |
++----+------+-----+-------------+-----------+-----------+-------------+
+None
+
+Kembali ke menu (y/t)? y
+===================================================
+
+	---pilihan---
+	1. penilaian mahasiswa
+	2. pembayaran mahasiswa
+	3. kalkulator
+
+	silakan pilih : 2
+
+===============================================
+
+	masukan nama = dede
+	masukan nim = 123
+	masukan semester saat ini = 1
+
+	---pilihan pembayaran---
+	1. pembayaran spp
+	2. pembayaran uts
+	3. pembayaran uas
+	4. pembayaran spp & uts
+	5. pembayaran spp & uas
+
+	silakan pilih : 1
+
+	jumlah bulan yang di bayar = 1
+==============================================================
+('\ttotal bayar spp Rp.350000 *', 1.0, ' = Rp.', 350000.0)
+None
+
+Kembali ke menu (y/t)? y
+===================================================
+
+	---pilihan---
+	1. penilaian mahasiswa
+	2. pembayaran mahasiswa
+	3. kalkulator
+
+	silakan pilih : 3
+--------------------
+masukan nilai a:50
+
+masukan nilai b:50
+----------------------
+	1.perkalian  3.pertambahan 
+
+	2.pembagian  4.pengurangan 
+pilih operasi = 3
+
+	sama dengan :100
+None
+
+Kembali ke menu (y/t)?
